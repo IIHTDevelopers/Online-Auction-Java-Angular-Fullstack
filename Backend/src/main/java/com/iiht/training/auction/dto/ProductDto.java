@@ -3,9 +3,9 @@ package com.iiht.training.auction.dto;
 import java.time.LocalDate;
 import java.util.Objects;
 
-import javax.validation.constraints.Future;
-
 import com.fasterxml.jackson.annotation.JsonFormat;
+
+import jakarta.validation.constraints.Future;
 
 public class ProductDto {
 	private Long productId;
