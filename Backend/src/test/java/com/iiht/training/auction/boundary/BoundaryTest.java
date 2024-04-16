@@ -8,11 +8,6 @@ import static com.iiht.training.auction.testutils.TestUtils.yakshaAssert;
 import java.time.LocalDate;
 import java.util.Set;
 
-import javax.validation.ConstraintViolation;
-import javax.validation.Validation;
-import javax.validation.Validator;
-import javax.validation.ValidatorFactory;
-
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Disabled;
@@ -26,6 +21,11 @@ import com.iiht.training.auction.dto.CustomerDto;
 import com.iiht.training.auction.dto.ProductDto;
 import com.iiht.training.auction.dto.SellerDto;
 import com.iiht.training.auction.testutils.MasterData;
+
+import jakarta.validation.ConstraintViolation;
+import jakarta.validation.Validation;
+import jakarta.validation.Validator;
+import jakarta.validation.ValidatorFactory;
 
 @ExtendWith(SpringExtension.class)
 public class BoundaryTest {
